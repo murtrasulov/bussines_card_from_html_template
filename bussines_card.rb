@@ -37,6 +37,10 @@ puts 'Введите имя и Фамилию:'
 answers[:name] = gets.chomp
 
 puts
+puts 'Введите ваш возраст:'
+answers[:age] = gets.chomp
+
+puts
 puts 'Введите должность:'
 answers[:employment] = gets.chomp
 
@@ -63,5 +67,4 @@ business_card_path = "#{Time.now.strftime('%Y-%m-%d_%H-%M')}.html"
 File.open(business_card_path, 'w:UTF-8') { |file| file.write template }
 puts
 puts "Ваша визитка сохранена в файл #{business_card_path}"
-
 
